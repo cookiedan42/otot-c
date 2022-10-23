@@ -15,7 +15,39 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"username\":\"admin\",\r\n    \"password\":\"ok\"\r\n}",
+					"raw": "{\r\n    \"username\":\"admin\",\r\n    \"password\":\"adminPW\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login reject user",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\":\"hello\",\r\n    \"password\":\"adminPW\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -47,7 +79,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"username\":\"user\",\r\n    \"password\":\"ok\"\r\n}",
+					"raw": "{\r\n    \"username\":\"user\",\r\n    \"password\":\"userPW\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
